@@ -16,7 +16,7 @@
         using HttpClient client = new();
 
         // Create a list of tasks for fetching data
-        List<Task<string>> fetchTasks = new();
+        List<Task<string>> fetchTasks = [];
         foreach (var url in urls)
         {
             fetchTasks.Add(FetchDataAsync(client, url));
